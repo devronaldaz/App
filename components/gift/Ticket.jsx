@@ -26,9 +26,9 @@ const Ticket = forwardRef(function Ticket(_, ref) {
             <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-sun-600">Boleto • Admite 2</span>
             <MiniSunflower size={22} />
           </div>
-          <h4 className="mt-5 font-serif text-[27px] leading-tight text-ink">¡Lo lograste!</h4>
+          <h4 className="mt-5 font-serif text-[27px] leading-tight text-ink">[Insertar título]</h4>
           <p className="mt-3 text-[14.5px] font-light leading-relaxed text-ink/80">
-            Escribe aquí el premio de tu ticket.
+            [Insertar mensaje del premio]
           </p>
         </div>
 
@@ -43,11 +43,11 @@ const Ticket = forwardRef(function Ticket(_, ref) {
             <div className="space-y-2.5">
               <div>
                 <p className="text-[9px] font-semibold uppercase tracking-[0.25em] text-muted">Válido para</p>
-                <p className="mt-0.5 whitespace-nowrap text-[13px] font-medium text-ink">Tu premio 🎟️</p>
+                <p className="mt-0.5 whitespace-nowrap text-[13px] font-medium text-ink">[Insertar premio] 🎟️</p>
               </div>
               <div>
                 <p className="text-[9px] font-semibold uppercase tracking-[0.25em] text-muted">Emitido</p>
-                <p className="mt-0.5 text-[13px] font-medium text-ink">Fecha especial</p>
+                <p className="mt-0.5 text-[13px] font-medium text-ink">[Insertar fecha]</p>
               </div>
             </div>
             {/* "código de barras" decorativo */}
@@ -58,7 +58,7 @@ const Ticket = forwardRef(function Ticket(_, ref) {
             </div>
           </div>
           <p className="mt-4 text-center text-[9px] font-medium uppercase tracking-[0.35em] text-muted/80">
-            A &amp; B • Nº 0001
+            [Iniciales] • Nº 0001
           </p>
         </div>
       </div>

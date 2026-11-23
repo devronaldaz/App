@@ -21,11 +21,11 @@ export default function FinalCall({ onStart }) {
         >
           <MiniSunflower size={28} />
         </motion.div>
-        <p className="eyebrow mt-5">Una última sorpresa</p>
+        <p className="eyebrow mt-5">[Insertar subtítulo]</p>
         <p className="mx-auto mt-4 max-w-[30ch] text-[14px] font-light leading-relaxed text-muted">
-          Pensabas que el regalo había terminado...
+          [Insertar mensaje]
         </p>
-        <p className="mt-1 font-serif text-[15px] italic text-ink/80">Pero todavía queda algo para ti.</p>
+        <p className="mt-1 font-serif text-[15px] italic text-ink/80">[Insertar mensaje]</p>
 
         <motion.button
           type="button"
@@ -34,7 +34,7 @@ export default function FinalCall({ onStart }) {
           whileTap={{ scale: 0.95 }}
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-b from-sun-400 to-sun-600 px-7 py-3.5 text-[14px] font-medium text-white shadow-glow"
         >
-          ¿Lista para un último reto?
+          [Insertar texto del botón]
           <ArrowRight size={16} />
         </motion.button>
       </div>

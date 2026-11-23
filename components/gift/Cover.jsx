@@ -41,7 +41,7 @@ export default function Cover() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.75, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
         >
-          Nuestro Regalo
+          [Insertar título]
         </motion.h1>
         <motion.p
           className="mt-3 font-serif text-[18px] italic text-white/90"
@@ -49,7 +49,7 @@ export default function Cover() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.05, duration: 1 }}
         >
-          Nombre &amp; Nombre
+          [Insertar nombres]
         </motion.p>
         <motion.p
           className="mt-5 text-[10px] font-medium uppercase tracking-[0.3em] text-white/70"
@@ -57,7 +57,7 @@ export default function Cover() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.35, duration: 1 }}
         >
-          Fecha especial
+          [Insertar fecha]
         </motion.p>
         <motion.div
           className="mt-8 flex justify-center text-white/70"

@@ -31,7 +31,7 @@ export default function App() {
 
           <footer className="px-6 pb-12 pt-6 text-center">
             <p className="text-[9.5px] font-medium uppercase tracking-[0.34em] text-muted/70">
-              Hecho con cariño
+              [Insertar firma]
             </p>
           </footer>
         </motion.main>

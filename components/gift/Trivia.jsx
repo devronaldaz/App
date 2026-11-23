@@ -6,9 +6,9 @@ import GameLink from './GameLink'
 import { MiniSunflower } from './Sunflower'
 
 const QUESTIONS = [
-  { q: "Pregunta 1: escribe aquí tu pregunta", options: ["Opción A", "Opción B", "Opción C"], correct: 0 },
-  { q: "Pregunta 2: escribe aquí tu pregunta", options: ["Opción A", "Opción B", "Opción C"], correct: 1 },
-  { q: "Pregunta 3: escribe aquí tu pregunta", options: ["Opción A", "Opción B", "Opción C"], correct: 2 },
+  { q: "[Insertar pregunta 1]", options: ["[Opción A]", "[Opción B]", "[Opción C]"], correct: 0 },
+  { q: "[Insertar pregunta 2]", options: ["[Opción A]", "[Opción B]", "[Opción C]"], correct: 1 },
+  { q: "[Insertar pregunta 3]", options: ["[Opción A]", "[Opción B]", "[Opción C]"], correct: 2 },
 ]
 
 const LETTERS = ['A', 'B', 'C']
@@ -127,8 +127,7 @@ export default function Trivia({ onClose }) {
             >
               {step === 0 && (
                 <p className="mx-auto mb-6 max-w-[34ch] text-center text-[13px] font-light leading-relaxed text-muted">
-                  Para descubrir la última sorpresa tendrás que responder unas preguntas sobre nosotros.
-                </p>
+                  [Insertar mensaje]                </p>
               )}
 
               {/* progreso */}
@@ -211,10 +210,9 @@ export default function Trivia({ onClose }) {
                 initial={{ opacity: 0, y: 20, scale: 0.96 }}
                 animate={{ opacity: 1, y: 0, scale: 1, transition: { duration: 1, ease: [0.22, 1, 0.36, 1] } }}
               >
-                <h3 className="font-serif text-[32px] text-ink">¡Lo has conseguido! 🌻</h3>
+                <h3 className="font-serif text-[32px] text-ink">[Insertar título]</h3>
                 <p className="mx-auto mt-2 max-w-[30ch] text-[13.5px] font-light text-muted [text-wrap:balance]">
-                  Sabía que no ibas a fallar. Aquí tienes tu recompensa.
-                </p>
+                  [Insertar mensaje]                </p>
               </motion.div>
 
               <AnimatePresence>

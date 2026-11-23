@@ -113,7 +113,7 @@ export default function PassCode({ onSuccess }) {
             Ingresa la clave
           </h3>
           <p className="mx-auto mt-2 max-w-[30ch] text-[13.5px] font-light leading-relaxed text-muted">
-            Una fecha especial...
+            [Insertar pista de la clave]
           </p>
         </div>
 

@@ -12,9 +12,9 @@ export default function Playlist() {
 
   return (
     <Section
-      eyebrow="Nuestra playlist"
-      title="Nuestra música"
-      description="Escribe aquí una descripción para tu playlist."
+      eyebrow="[Insertar subtítulo]"
+      title="[Insertar título]"
+      description="[Insertar mensaje]"
     >
       {/* Disco que gira (decorativo, como en el video) */}
       <div className="flex flex-col items-center">
@@ -44,7 +44,7 @@ export default function Playlist() {
             {spinning ? <Pause size={18} fill="currentColor" /> : <Play size={18} fill="currentColor" className="ml-0.5" />}
           </motion.button>
         </div>
-        <p className="mt-5 font-serif text-[17px] text-ink">Nuestra música</p>
+        <p className="mt-5 font-serif text-[17px] text-ink">[Insertar texto]</p>
         <p className="eyebrow mt-1 !text-[9.5px]">Spotify</p>
       </div>
 

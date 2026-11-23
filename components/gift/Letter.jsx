@@ -57,7 +57,7 @@ export default function Letter() {
 
   if (!status) {
     return (
-      <Section eyebrow="Carta" title="Una carta para ti">
+      <Section eyebrow="Carta" title="[Insertar título de la carta]">
         <div className="card flex h-56 items-center justify-center">
           <MiniSunflower size={28} className="animate-spin [animation-duration:4s]" />
         </div>
@@ -70,8 +70,8 @@ export default function Letter() {
     return (
       <Section
         eyebrow="Carta"
-        title="Aún no es el momento..."
-        description="Hay cosas que se leen mejor cuando el día termina y todo está en silencio. Vuelve aquí cuando el contador llegue a cero."
+        title="[Insertar título]"
+        description="[Insertar mensaje]"
       >
         <div className="card px-6 pb-8 pt-7 text-center">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-sun-100 text-sun-600">
@@ -95,8 +95,8 @@ export default function Letter() {
   return (
     <Section
       eyebrow="Carta"
-      title="Una carta para ti"
-      description="Ahora sí. Tómate un minuto, respira profundo y abre esto."
+      title="[Insertar título de la carta]"
+      description="[Insertar mensaje]"
     >
       <div className="card anim-fade-in px-6 pb-8 pt-8 text-center">
         <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-sun-100 text-sun-600">

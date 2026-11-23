@@ -6,7 +6,7 @@ import PassCode from './PassCode'
 /**
  * 1. Pantalla de inicio.
  * Al tocar el girasol: se abre (pétalos), gira y crece,
- * aparece "Has abierto tu regalo" y luego se revela el contenido.
+ * aparece "[Insertar título]" y luego se revela el contenido.
  */
 export default function Splash({ onOpen }) {
   const [phase, setPhase] = useState('idle') // idle → blooming → opened
@@ -16,7 +16,7 @@ export default function Splash({ onOpen }) {
     if (phase !== 'idle') return
     setPhase('blooming')
     setTimeout(() => setPhase('opened'), 1100)
-    // tras "Has abierto tu regalo" aparece la ventana de la clave
+    // tras "[Insertar título]" aparece la ventana de la clave
     setTimeout(() => setAsking(true), 2600)
   }
 
@@ -45,15 +45,14 @@ export default function Splash({ onOpen }) {
             exit={{ opacity: 0, y: -16, filter: 'blur(6px)', transition: { duration: 0.6 } }}
             className="card w-full max-w-sm px-7 pb-8 pt-9 text-center"
           >
-            <p className="eyebrow">Tienes un regalo</p>
+            <p className="eyebrow">[Insertar subtítulo]</p>
             <div className="mx-auto mt-3 h-5 w-px rotate-[20deg] bg-muted/40" />
             <h1 className="mt-3 font-serif text-[30px] leading-[1.18] text-ink [text-wrap:balance]">
-              Porque hay personas que son luz
+              [Insertar título]
             </h1>
             <div className="mx-auto my-5 h-px w-14 bg-sun-400/60" />
             <p className="mx-auto max-w-[30ch] font-serif text-[15px] italic leading-relaxed text-ink/75">
-              Todo lo que vas a ver aquí fue hecho especialmente para ti. Tómate tu tiempo para explorarlo.
-            </p>
+              [Insertar mensaje]            </p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -109,10 +108,9 @@ export default function Splash({ onOpen }) {
             animate={{ opacity: 1, y: 0, transition: { duration: 1, ease: [0.22, 1, 0.36, 1] } }}
             className="absolute inset-x-0 bottom-[22%] px-8 text-center"
           >
-            <h2 className="font-serif text-[28px] text-ink">Has abierto tu regalo</h2>
+            <h2 className="font-serif text-[28px] text-ink">[Insertar título]</h2>
             <p className="mt-2 text-[13px] font-light text-muted">
-              Cada sección guarda un pedacito de este regalo.
-            </p>
+              [Insertar mensaje]            </p>
           </motion.div>
         )}
       </AnimatePresence>

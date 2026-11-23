@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply font-sans text-ink antialiased;
+    background-color: #fbf6ee;
+    background-image:
+      radial-gradient(120% 60% at 50% 0%, #fdf3df 0%, rgba(253, 243, 223, 0) 60%),
+      radial-gradient(90% 50% at 100% 100%, #f6e6d3 0%, rgba(246, 230, 211, 0) 70%);
+    background-attachment: fixed;
+    min-height: 100dvh;
+  }
+  ::selection {
+    background: #f8dc8e;
+  }
+}
+
+@layer components {
+  /* Etiqueta pequeña en mayúsculas, muy espaciada (como "GALERÍA" en el video) */
+  .eyebrow {
+    @apply font-sans text-[10.5px] font-medium uppercase tracking-[0.32em] text-muted;
+  }
+  .card {
+    @apply rounded-[28px] border border-white/70 bg-white/55 shadow-card backdrop-blur-sm;
+  }
+  /* Placeholder pastel de foto */
+  .photo-placeholder {
+    background:
+      radial-gradient(80% 60% at 30% 25%, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 60%),
+      linear-gradient(160deg, #f6e3c3 0%, #efd3b4 45%, #e7c6a6 100%);
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Animaciones del juego en CSS puro.
+   Si el celular bloquea la pantalla en medio de una animación, el navegador la
+   pausa y la retoma al volver (con JS podían quedarse trabadas a medio camino).
+   --------------------------------------------------------------------------- */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes card-flip-in {
+  0%   { transform: translateY(0) rotateY(180deg) scale(0.97); }
+  35%  { transform: translateY(-36px) rotateY(180deg) scale(1.06); }
+  100% { transform: translateY(0) rotateY(0deg) scale(1); }
+}
+@keyframes card-out-right {
+  to { transform: translateX(420px) rotate(16deg); opacity: 0; }
+}
+@keyframes card-out-down {
+  to { transform: translateY(420px) rotate(-12deg); opacity: 0; }
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(-24px) scale(0.96); }
+  to   { opacity: 1; transform: none; }
+}
+.anim-fade-in      { animation: fade-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.anim-card-in      { animation: card-flip-in 1.15s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.anim-card-out-right { animation: card-out-right 0.6s ease-in both; }
+.anim-card-out-down  { animation: card-out-down 0.6s ease-in both; }
+.anim-toast-in     { animation: toast-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-in, .anim-card-in, .anim-toast-in { animation-duration: 0.01s; }
+}

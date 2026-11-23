@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "rooms": {
+      "$code": {
+        ".read": true,
+        ".write": "$code.matches(/^[A-Z0-9]{4}$/)",
+        "players": {
+          "$playerId": {
+            "name": { ".validate": "newData.isString() && newData.val().length <= 40" }
+          }
+        },
+        "questions": {
+          "$questionId": {
+            "text": { ".validate": "newData.isString() && newData.val().length <= 220" }
+          }
+        }
+      }
+    }
+  }
+}

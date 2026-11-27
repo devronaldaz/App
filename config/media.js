@@ -12,7 +12,7 @@ export const MEDIA = {
   // │ 📸 INSERTA TU URL DE FOTO AQUÍ  →  Foto de portada           │
   // │    (vertical u horizontal, se recorta sola)                  │
   // └──────────────────────────────────────────────────────────────┘
-  coverPhoto: '/media/portada.webp', // ej: '/media/portada.jpg'
+  coverPhoto: '', // ej: '/media/portada.jpg'
 
   // ┌──────────────────────────────────────────────────────────────┐
   // │ 📸 INSERTA TU URL DE FOTO AQUÍ  →  Foto redonda del "disco"  │
